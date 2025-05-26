@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <logger name="org.springframework.security" level="DEBUG"/>
+    <logger name="org.hstn.pharmacy.security.service.AuthService" level="DEBUG"/>
+    <logger name="org.hstn.pharmacy.security.filter.JwtAuthFilter" level="DEBUG"/>
+    <logger name="org.springframework.security.web.FilterChainProxy" level="DEBUG"/>
+    <logger name="org.hstn.pharmacy" level="DEBUG"/> </configuration>
