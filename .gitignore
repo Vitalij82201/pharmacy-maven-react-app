@@ -1,0 +1,18 @@
+﻿# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# React/Node.js
+node_modules/
+dist/
+.env
+.DS_Store
